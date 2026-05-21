@@ -1,0 +1,47 @@
+/* Resets 
+-----------------------------------------------*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* height: 100%; */
+     /* elements default to the height of their content. This tells the browser the body element the height of the viewport even when the content doesn't  */
+    font-size: 62.5%; /* The default, 1rem = 10px. this makes 16px = 1.6rem*/
+    /* display: grid; */
+    /* grid-template-columns: auto 5rem auto 5rem; */
+}
+body > * {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+
+/* button reset from morten */
+button {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    overflow: visible;
+    text-transform: none;
+    -webkit-appearance: button;
+    border: 0;
+    background: none;
+}
+button:hover {
+    cursor: pointer;
+}
+button:hover, button:focus, button:active {
+    background: none;
+    border-color: inherit;
+    border-radius: 0;
+}
+/* Global img reset from Morten  */
+img {
+    /* display: block; */
+    vertical-align: middle;
+    /* max-width: 100%; */
+    height: auto;
+}
+

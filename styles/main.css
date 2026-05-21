@@ -1,0 +1,15 @@
+
+body {
+  background-color: #21211E;
+}
+
+.one {
+  background-image: url(../images/background-v2.png);
+  background-size: cover;
+  height: 100vh;
+  background-position: top;
+  /* background-repeat: no-repeat; */
+}
+.page-wrapper {
+  max-width: 796px;
+}
