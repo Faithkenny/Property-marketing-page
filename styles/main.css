@@ -1,14 +1,61 @@
+:root {
 
-body {
-  background-color: #21211E;
+  --gray-900: #21211E;
+  --gray-800: #444240;
+  --gray-700: #545456;
+  --gray-500: #6F6F6D;
+  --gray-450: #888480;
+  --gray-400: #858583;
+  --gray-300: #CDCDCC;
+  --gray-200: #737377;
+  --gray-0: #fff;
+
+  --brown-500: #A95726;
+  --brown-100: #F2E1D3;
+
+  --cool-gray-800: #28353F;
+  --cool-gray-700: #474D5C;
+  --cool-gray-500: #767585;
+
+  --blue-500: #00DDFF;
+  --blue-100: #F0FAFD;
+
+
+  --text-hero-title: var(--brown-100);
+  --text-hero-icon: var(--gray-0);
+  --text-hero-asking-web: var(--gray-400);
+  --text-hero-strikethrough-web: var(--gray-500);
+
+  --text-section-sub: var(--cool-gray-800);
+  --text-section-title: var(--cool-gray-800);
+  --text-section-caption: var(--brown-500);
+
+  --text-location-perks-web: var(--gray-200);
+  --text-location-perks-mobile: var(--gray-450);
+
+  --icon-hero: var(--brown-500);
+  --icon-title-caption: var(--brown-500);
+  --icon-location-perks-web: var(--gray-700);
+  --icon-location-perks-mobile: var(--gray-450);
+
+  
+  --surface-desktop-background: var(--gray-900);
+  --surface-button-primary: var(--blue-500);
+  --surface-button-secondary: var(--cool-gray-800);
+
 }
 
-.one {
+
+body {
+    background-color: var(--surface-desktop-background);
+}
+
+section.one {
   background-image: url(../images/background-v2.png);
   background-size: cover;
   height: 100vh;
   background-position: top;
-  /* background-repeat: no-repeat; */
+  background-repeat: no-repeat;
 }
 .page-wrapper {
   max-width: 796px;
