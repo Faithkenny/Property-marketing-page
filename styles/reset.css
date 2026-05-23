@@ -5,15 +5,20 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* height: 100%; */
+    height: 100%;
      /* elements default to the height of their content. This tells the browser the body element the height of the viewport even when the content doesn't  */
     font-size: 62.5%; /* The default, 1rem = 10px. this makes 16px = 1.6rem*/
     /* display: grid; */
     /* grid-template-columns: auto 5rem auto 5rem; */
+    /* font-family: "Inter Display", "Inter", sans-serif; */
 }
-body > * {
+body > *, * {
     box-sizing: inherit;
     margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
 }
 
 
@@ -33,9 +38,9 @@ button:hover {
     cursor: pointer;
 }
 button:hover, button:focus, button:active {
-    background: none;
+    /* background: none; */
     border-color: inherit;
-    border-radius: 0;
+    /* border-radius: 0; */
 }
 /* Global img reset from Morten  */
 img {
