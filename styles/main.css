@@ -64,8 +64,8 @@ body {
    width: 100%;
    display: flex; 
    flex-direction: column;
-   align-items: center;
-   justify-content: stretch; 
+   /* align-items: center; This thing is problematic */
+   /* justify-content: stretch;  */
 }
 
 /* Navigation starts here  */
@@ -290,9 +290,20 @@ section.one {
 /* Media query targeting mobile devices */
 @media screen and (max-width:798px){
 
-header.navigation ul {
+header.navigation .web-links {
   display: none;
 }  
+
+.zero svg {
+  width: 57px;
+  height: 13px;
+  fill: black;
+}
+
+.zero svg path {
+
+  fill: var(--main-color-dark);
+}
 
 .right {
   display: flex;
@@ -357,7 +368,7 @@ section.one {
   /* gap: rem;  */
   row-gap: 0.6rem;
 
-  width: 150%;
+  /* width: 150%; */
 
   
 
