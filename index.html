@@ -6,8 +6,12 @@
   <meta name="description" content="Zion Residence — property marketing">
 
   <title>Zion Residence</title>
+  <script defer src="for-section-one-mobile.js"></script>
+  <script defer src="hotspots.js"></script>
+
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/hotspots.css">
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css"/>
   <link rel="stylesheet" href="https://rsms.me/inter/inter-display.css"/>
   <link rel="icon" type="image/x-icon" href="images/fav-icon.png">
@@ -94,79 +98,74 @@
           <p>Level at DPC + Decking pillars | Ile-ife, Osun </p>
         </div>
       </header>
-      <div class="image">
-        <img src="images/layout-2x.jpg" alt="Site's layout photo">
+      <section class="products">
+        <div class="product-card">
+      
+          <div class="product-image">
+            <img src="images/layout-2x.jpg"
+                 alt="Architectural layout"
+                 class="img">
+      
+            <button class="hotspot h-1"
+                    data-title="Main building"
+                    data-description="4-bedroom main residence with home office."
+                    data-image="vids/main-building.mov">
+            </button>
+      
+            <button class="hotspot h-2"
+                    data-title="Entrance"
+                    data-description="Main access point into the property."
+                    data-image="images/site-photo.jpg">
+            </button>
+      
+            <button class="hotspot h-4"
+                    data-title="Gatehouse"
+                    data-description="Security and visitor management space."
+                    data-image="images/site-photo.jpg">
+            </button>
+      
+            <button class="hotspot h-5"
+                    data-title="Landscape"
+                    data-description="Outdoor recreational and green area."
+                    data-image="images/site-photo.jpg">
+            </button>
+      
+            <button class="hotspot h-6"
+                    data-title="Parking"
+                    data-description="Parking area for residents and guests."
+                    data-image="images/site-photo.jpg">
+            </button>
+          </div>
+      
+        </div>
+      </section>
+      
+      <!-- MODAL -->
+      <div class="hotspot-modal" id="hotspotModal">
+      
+        <div class="hotspot-modal__overlay"></div>
+      
+        <div class="hotspot-modal__card">
+      
+          <button class="hotspot-modal__close">
+            ×
+          </button>
+      
+          <img class="hotspot-modal__image" src="" alt="">
+      
+          <div class="hotspot-modal__content">
+            <h3 class="hotspot-modal__title"></h3>
+            <p class="hotspot-modal__description"></p>
+          </div>
+      
+        </div>
+      
       </div>
     </section>
   </div>
   
 
-  <script>
-    function moveMobileElements() {
-      const isMobile = window.matchMedia("(max-width: 798px)").matches;
-  
-      const right = document.querySelector(".right");
-      const titleDetails = document.querySelector(".titleDetails-buttons");
-      const titleFeaturesPrice = document.querySelector(".title-features-price");
-  
-      const priceWrapper = document.querySelector(".price-wrapper");
-      const forBtns = document.querySelector(".for-btns");
-  
-      if (
-        !right ||
-        !titleDetails ||
-        !titleFeaturesPrice ||
-        !priceWrapper ||
-        !forBtns
-      ) return;
-  
-      // Create wrapper div if it doesn't exist
-      let mobileWrapper = document.querySelector(".mobile-price-btn-wrapper");
-  
-      if (!mobileWrapper) {
-        mobileWrapper = document.createElement("div");
-        mobileWrapper.classList.add("mobile-price-btn-wrapper");
-      }
-  
-      if (isMobile) {
-        // Append wrapper to .right
-        if (mobileWrapper.parentElement !== right) {
-          right.appendChild(mobileWrapper);
-        }
-  
-        // Move elements into wrapper
-        if (priceWrapper.parentElement !== mobileWrapper) {
-          mobileWrapper.appendChild(priceWrapper);
-        }
-  
-        if (forBtns.parentElement !== mobileWrapper) {
-          mobileWrapper.appendChild(forBtns);
-        }
-  
-      } else {
-        // Move elements back to original desktop positions
-  
-        if (priceWrapper.parentElement !== titleFeaturesPrice) {
-          titleFeaturesPrice.appendChild(priceWrapper);
-        }
-  
-        if (forBtns.parentElement !== titleDetails) {
-          titleDetails.appendChild(forBtns);
-        }
-  
-        // Remove empty wrapper from DOM
-        if (mobileWrapper.parentElement) {
-          mobileWrapper.remove();
-        }
-      }
-    }
-  
-    // Run on load
-    moveMobileElements();
-  
-    // Run on resize
-    window.addEventListener("resize", moveMobileElements);
-  </script>
+
 
 </body>
 </html>

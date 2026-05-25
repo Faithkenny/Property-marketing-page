@@ -492,19 +492,20 @@ section.two header.top {
 header.top div {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.4rem;
 }
 
 header.top div:first-of-type p:first-of-type {
   color: var(--main-color-dark);
   text-align: center;
-  font-family: "Inter Display";
-  font-size: 1.4rem;
+  font-family: Inter;
+  font-size: 1.2rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: normal;
-  letter-spacing: 0.18rem;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
+  opacity: 0.5;
 }
 
 header.top h2 {
@@ -538,11 +539,132 @@ header.top div:nth-of-type(2) p {
   letter-spacing: -0.024rem;
 }
 
-div.image {
+
+
+
+.products {
+  padding: 2em;
   width: 100%;
 }
-
-div.image img {
-  display: block;
+.product-card {
+  width: 80%;
+  max-width: 1920px;
+  margin: 2em auto;
+  position: relative;
+}
+.product-card img {
   width: 100%;
+}
+.product-image {
+  position: relative;
+}
+.hotspot {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, .6); */
+}
+
+.hotspot::before {
+  background-color: inherit;
+  border-radius: inherit;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  animation: pulse 2s linear infinite;
+  pointer-events: none;
+}
+
+/* hotspot colors     */
+.product-card:nth-child(1) .hotspot {
+  background-color: var(--main-color-light);
+}
+
+/* hotspot positions */
+/* first card */
+.product-card:nth-child(1) .h-1 {
+  left: 14%;
+  top: 15%;
+}
+.product-card:nth-child(1) .h-2 {
+  left: 37%;
+  top: 55%;
+}
+/* .product-card:nth-child(1) .h-3 {
+  left: 82%;
+  top: 90%;
+} */
+.product-card:nth-child(1) .h-4 {
+  left: 84%;
+  top: 24%;
+}
+.product-card:nth-child(1) .h-5 {
+  left: 72%;
+  top: 18%;
+}
+.product-card:nth-child(1) .h-6 {
+  left: 3.5%;
+  top: 50%;
+}
+
+.tooltip {
+  position: absolute;
+  top: -5em;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f0f0f0;
+  color: black;
+  min-width: 5em;
+  border-radius: 5px;
+  transition: 200ms;
+  pointer-events: none;
+}
+/* .tooltip h3 {
+  padding: 0.5em;
+  text-align: center;
+  background-color: #cfcfcf;
+  border-radius: 5px 5px 0 0;
+}
+.tooltip p {
+  padding: 0.5em;
+  font-size: 0.8em;
+} */
+.tooltip::before {
+  content: "";
+  position: absolute;
+  bottom: -1em;
+  left: 50%;
+  transform: translate(-50%);
+  width: 0;
+  height: 0;
+  border-left: 0.5em solid  transparent;
+  border-right: 0.5em solid  transparent;
+  border-top: 1em solid #f0f0f0;
+}
+.tooltip {
+  opacity: 0;
+}
+.hotspot:hover .tooltip, .tooltip-show {
+  top: -7em;
+  opacity: 1;
+}
+@keyframes pulse {
+  0% {
+      width: 0;
+      height: 0;
+      opacity: 1;
+  }
+  50% {
+      width: 300%;
+      height: 300%;
+      opacity: 0;
+  }
+  100% {
+      opacity: 0;
+  }
 }
