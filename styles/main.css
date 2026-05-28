@@ -78,6 +78,11 @@ header.navigation {
   
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 nav.zero {
   height: 4.8rem;
   /* background-color: red; */
@@ -86,7 +91,7 @@ nav.zero {
   align-items: center;
   justify-content: space-between;
   padding: 0 0.8rem 0;
-  margin: 0 1.4rem ;
+  margin: 0 2rem ;
 }
 
 nav ul {
@@ -95,7 +100,7 @@ nav ul {
   margin: 0;
 
   display: flex;
-  gap: 2.8rem;
+  gap: 4rem;
 
 
   font-family: Inter;
@@ -103,7 +108,19 @@ nav ul {
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 400;
+  letter-spacing: -0.04rem;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: var(--white);
+  transition: opacity 200ms ease;
   opacity: 0.4;
+
+}
+
+nav ul a:hover {
+  opacity: 1;
 }
 
 /* Navigation ends here  */
@@ -267,6 +284,10 @@ section.one {
   font-weight: 600;
   line-height: 1.8rem; /* 106.25% */
   letter-spacing: -0.015rem;
+}
+
+section.one a {
+  text-decoration: none;
 }
 
 .btn-secondary {
@@ -1240,13 +1261,9 @@ section.five {
   font-size: 4rem;
   font-weight: 600;
 
-  color: #222126;
-  font-family: Inter;
-  font-size: 40px;
-  font-style: normal;
   font-weight: 600;
   line-height: normal;
-  letter-spacing: -1.2px;
+  letter-spacing: -0.12rem;
 }
 
 /* =========================
@@ -1254,7 +1271,7 @@ section.five {
 ========================= */
 
 .pricing-card__bottom {
-  padding: 4rem;
+  padding: 2.8rem;
 
   display: flex;
   flex-direction: column;
@@ -1277,19 +1294,14 @@ section.five {
   align-items: center;
   gap: 2rem;
 
-  color: #7A7A89;
+  color: #767585;
 
   font-family: Inter;
   font-size: 2rem;
   font-weight: 400;
+
 }
 
-.pricing-card__bottom li span {
-  color: black;
-
-  font-size: 2.4rem;
-  line-height: 1;
-}
 
 /* =========================
    BUTTONS
@@ -1304,7 +1316,7 @@ section.five {
 .btn-access,
 .btn-copy {
   border: none;
-  border-radius: 999px;
+  border-radius: 8px;
 
   padding: 2.2rem;
 
@@ -1314,7 +1326,6 @@ section.five {
 
   cursor: pointer;
 
-  transition: 200ms ease;
 }
 
 .btn-access {
@@ -1327,10 +1338,6 @@ section.five {
   color: var(--main-color-dark);
 }
 
-.btn-access:hover,
-.btn-copy:hover {
-  transform: translateY(-2px);
-}
 
 /* =========================
    RESPONSIVE
