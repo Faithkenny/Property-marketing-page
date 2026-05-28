@@ -8,6 +8,7 @@
   <title>Zion Residence</title>
   <script defer src="for-section-one-mobile.js"></script>
   <script defer src="hotspots.js"></script>
+  <script defer src="section-two-accordion.js"></script>
 
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/main.css">
@@ -33,7 +34,7 @@
             </ul>
         </nav>
     </header>
-    <section class="one ">
+    <section class="one">
         <div class="left"></div>     
         <div class="right">
           <main class="titleDetails-buttons">
@@ -83,7 +84,7 @@
         </div>     
     </section>
 
-    <section class="two">
+    <section class="area two">
       <header class="top">
         <div>
           <p>Property state → Uncompleted</p>
@@ -107,33 +108,33 @@
                  class="img">
       
             <button class="hotspot h-1"
-                    data-title="Main building"
-                    data-description="4-bedroom main residence with home office."
-                    data-image="vids/main-building.mov">
+                    data-title="Borehole"
+                    data-description=""
+                    data-image="images/borehole.png">
             </button>
       
             <button class="hotspot h-2"
-                    data-title="Entrance"
-                    data-description="Main access point into the property."
-                    data-image="images/site-photo.jpg">
+                    data-title="Main house"
+                    data-description="4-bedroom main residence with home office"
+                    data-image="vids/main-building.mov">
             </button>
       
             <button class="hotspot h-4"
                     data-title="Gatehouse"
                     data-description="Security and visitor management space."
-                    data-image="images/site-photo.jpg">
+                    data-image="vids/gatehouse.mov">
             </button>
       
             <button class="hotspot h-5"
-                    data-title="Landscape"
-                    data-description="Outdoor recreational and green area."
-                    data-image="images/site-photo.jpg">
+                    data-title="Septic tank"
+                    data-description="Septic tank & soakaway"
+                    data-image="images/septic-tank.png">
             </button>
       
             <button class="hotspot h-6"
-                    data-title="Parking"
-                    data-description="Parking area for residents and guests."
-                    data-image="images/site-photo.jpg">
+                    data-title="Retaining wall"
+                    data-description="Reinforced against flooding, & baseline for floor tarring"
+                    data-image="vids/retaining-wall.mov">
             </button>
           </div>
       
@@ -152,6 +153,15 @@
           </button>
       
           <img class="hotspot-modal__image" src="" alt="">
+
+          <video
+            class="hotspot-modal__video"
+            controls
+            autoplay
+            playsinline
+            muted
+            allowfullscreen
+          ></video>
       
           <div class="hotspot-modal__content">
             <h3 class="hotspot-modal__title"></h3>
@@ -161,7 +171,418 @@
         </div>
       
       </div>
+
+      <section class="accordion-section">
+
+        <div class="accordion">
+      
+          <!-- ITEM 1 -->
+          <article class="accordion-item active">
+      
+            <button class="accordion-header">
+      
+              <div class="accordion-copy">
+                <p>4 Completed infrastructures</p>
+                <h3>
+                  Gatehouse, Borehole, Septic tank & Retaining wall
+                </h3>
+              </div>
+      
+              <span class="accordion-icon">−</span>
+      
+            </button>
+      
+            <div class="accordion-content">
+              <p>
+                Core site infrastructure already completed,
+                reducing future construction costs and setup time.
+              </p>
+            </div>
+      
+          </article>
+      
+          <!-- ITEM 2 -->
+          <article class="accordion-item">
+      
+            <button class="accordion-header">
+      
+              <div class="accordion-copy">
+                <p>Complete documentation, no surprises</p>
+                <h3>
+                  Direct owner-managed brief
+                </h3>
+              </div>
+      
+              <span class="accordion-icon">+</span>
+      
+            </button>
+      
+            <div class="accordion-content">
+              <p>
+                Full documentation
+                available for buyers and contractors.
+                
+                Deed of assignment, Red copy survey, Estate registration receipt, Town planning approval, Architectural, & MEP drawings
+                
+              </p>
+            </div>
+      
+          </article>
+  
+          <!-- ITEM 3 -->
+          <article class="accordion-item">
+      
+            <button class="accordion-header">
+      
+              <div class="accordion-copy">
+                <p>Spacious home & compound</p>
+                <h3>
+                  Generous setback on both sides
+                </h3>
+              </div>
+      
+              <span class="accordion-icon">+</span>
+      
+            </button>
+      
+            <div class="accordion-content">
+              <p>
+                Generous outdoor circulation and parking space
+                suitable for family living and future expansion.
+                
+              </p>
+            </div>
+      
+          </article>
+      
+          <!-- ITEM 4 -->
+          <article class="accordion-item">
+      
+            <button class="accordion-header">
+      
+              <div class="accordion-copy">
+                <p>In a premium estate</p>
+                <h3>
+                  On Ede road, 5 minutes from 
+  Obafemi Awolowo University.
+                </h3>
+              </div>
+      
+              <span class="accordion-icon">+</span>
+      
+            </button>
+      
+            <div class="accordion-content">
+              <p>
+              </p>
+            </div>
+      
+          </article>
+      
+        </div>
+      
+      </section>
     </section>
+
+    <section class="area three">
+      <header class="top">
+        <div>
+          <p>LOCATION PERKS AND BENEFITS</p>
+          <h2>A family-friendly neighbourhood 
+         quite central to good spots</h2>
+        </div>
+        <!-- <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M9.8132 15.9038L9 18.75L8.1868 15.9038C7.75968 14.4089 6.59112 13.2403 5.09619 12.8132L2.25 12L5.09619 11.1868C6.59113 10.7597 7.75968 9.59112 8.1868 8.09619L9 5.25L9.8132 8.09619C10.2403 9.59113 11.4089 10.7597 12.9038 11.1868L15.75 12L12.9038 12.8132C11.4089 13.2403 10.2403 14.4089 9.8132 15.9038Z" stroke="#A95726" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M18.2589 8.71454L18 9.75L17.7411 8.71454C17.4388 7.50533 16.4947 6.56117 15.2855 6.25887L14.25 6L15.2855 5.74113C16.4947 5.43883 17.4388 4.49467 17.7411 3.28546L18 2.25L18.2589 3.28546C18.5612 4.49467 19.5053 5.43883 20.7145 5.74113L21.75 6L20.7145 6.25887C19.5053 6.56117 18.5612 7.50533 18.2589 8.71454Z" stroke="#A95726" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16.8942 20.5673L16.5 21.75L16.1058 20.5673C15.8818 19.8954 15.3546 19.3682 14.6827 19.1442L13.5 18.75L14.6827 18.3558C15.3546 18.1318 15.8818 17.6046 16.1058 16.9327L16.5 15.75L16.8942 16.9327C17.1182 17.6046 17.6454 18.1318 18.3173 18.3558L19.5 18.75L18.3173 19.1442C17.6454 19.3682 17.1182 19.8954 16.8942 20.5673Z" stroke="#A95726" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <p>Level at DPC + Decking pillars | Ile-ife, Osun </p>
+        </div> -->
+      </header>
+      <section class="products">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="images/section-3-image.png"
+                 alt="Architectural layout"
+                 class="img">
+          </div>
+
+      
+        </div>
+      </section>
+      <div class="perks">
+        <div class="icon-location-perk">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <path d="M6 30C10.9655 30 14.6897 24 14.6897 24C14.6897 24 18.4138 30 23.3794 30C28.3448 30 33.3104 24 33.3104 24C33.3104 24 38.2758 30 42 30" stroke="#545456" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 40C10.9655 40 14.6897 34 14.6897 34C14.6897 34 18.4138 40 23.3794 40C28.3448 40 33.3104 34 33.3104 34C33.3104 34 38.2758 40 42 40" stroke="#545456" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M38 20C38 12.268 31.732 6 24 6C16.268 6 10 12.268 10 20" stroke="#545456" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="location-perk">
+            <h3>
+              Serene, Gated Estate
+            </h3>
+            <p>Clean air, well-laid out estate with decent roads, & great neighbours. A place comfortable for family life</p>
+          </div>
+        </div>
+        <div class="icon-location-perk">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <path d="M24 37L18 34L6 40V14L18 8L30 14L42 8V23" stroke="#545456" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M18 8V34" stroke="#545456" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M30 14V25" stroke="#545456" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M42.242 40.2413C43.0813 39.4023 43.6529 38.3332 43.8846 37.1693C44.1162 36.0053 43.9975 34.7988 43.5435 33.7024C43.0894 32.6059 42.3203 31.6687 41.3336 31.0094C40.3469 30.35 39.1868 29.998 38 29.998C36.8132 29.998 35.6531 30.35 34.6664 31.0094C33.6797 31.6687 32.9106 32.6059 32.4566 33.7024C32.0025 34.7988 31.8838 36.0053 32.1154 37.1693C32.3471 38.3332 32.9187 39.4023 33.758 40.2413C34.594 41.0793 36.008 42.3313 38 43.9993C40.102 42.2193 41.518 40.9673 42.242 40.2413Z" stroke="#545456" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M38 36V36.02" stroke="#545456" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="location-perk">
+            <h3>
+              Third Spaces
+            </h3>
+            <p>Green spaces, a public park, designated markets, the Ooni of Ife palace, a Museum, & Zoo</p>
+          </div>
+        </div>
+        <div class="icon-location-perk">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <path d="M44 24C44 35.0456 35.0456 44 24 44C12.9543 44 4 35.0456 4 24C4 12.9543 12.9543 4 24 4C35.0456 4 44 12.9543 44 24Z" stroke="#545456" stroke-width="2.5"/>
+            <path d="M37.8362 20.825C35.8982 21.6734 32.9702 22.436 30.319 21.4336C26.5276 20 24.5786 20 24 20C23.4214 20 21.4724 20 17.681 21.4336C15.0298 22.436 12.1018 21.6734 10.1637 20.825M38 26.5096C33.7092 27.3262 27.2158 29.756 27.0476 38M20.9524 38C20.7842 29.756 14.2909 27.3262 10 26.5096" stroke="#545456" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M24.0141 26H23.9961" stroke="#545456" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="location-perk">
+            <h3>
+              Quick Interstates
+            </h3>
+            <p>20 minutes from Redeemers Uni, 35 minutes from Osogbo, 1 hour from Ibadan</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- <section class="four">
+      <div class="structural-integrity">
+        <div class="structLeft">
+          <div class="textWrapper">
+              <h1>
+                Structural integrity
+        Built to last
+              </h1>
+              <ul>
+                From flying to Abuja to meet the Architect in person to painstakingly vetting Contractors, and artisans, this project has had the highest level of care from day 1.
+                <li>Depth goes deeper than the industry standard for a duplex</li>
+                <li>16mm reinforcements vs 12mm</li>
+                <li>DPC against damping</li>
+              </ul>
+          </div>
+        </div>
+        <div class="structRight"></div>
+      </div>
+      <div class="two-images">
+        <div class="">
+          <img src="images/foundation-depth.jpg" alt="The foundation's depth">
+        </div>
+        <div class="">
+          <video src="vids/dpc-work.mp4" controls ></video>
+        </div>
+      </div>
+
+    </section> -->
+
+    <section class="four">
+
+      <!-- TOP TEXT AREA -->
+      <div class="structural-integrity">
+    
+        <div class="structLeft">
+          <h2>
+            Structural integrity<br>
+            Built to last
+          </h2>
+        </div>
+    
+        <div class="structRight">
+    
+          <p>
+            From flying to Abuja to meet the Architect in person to
+            painstakingly vetting Contractors and artisans, this project
+            has had the highest level of care from day 1.
+          </p>
+    
+          <ul>
+            <li>Depth goes deeper than the industry standard for a duplex</li>
+            <li>16mm reinforcements vs 12mm</li>
+            <li>DPC against damping</li>
+          </ul>
+    
+        </div>
+    
+      </div>
+    
+      <!-- MEDIA GRID -->
+      <div class="two-images">
+    
+        <div class="media-card">
+          <img
+            src="images/foundation-depth.jpg"
+            alt="Foundation depth"
+          >
+        </div>
+    
+        <div class="media-card">
+          <video
+            src="vids/dpc-work.mp4"
+            controls
+            playsinline
+            muted
+          ></video>
+        </div>
+    
+      </div>
+    
+    </section>
+
+    <!-- <section class="area five">
+      <header class="top">
+        <div>
+          <p>Pricing</p>
+          <h2>Simple & transparent</h2>
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M9.8132 15.9038L9 18.75L8.1868 15.9038C7.75968 14.4089 6.59112 13.2403 5.09619 12.8132L2.25 12L5.09619 11.1868C6.59113 10.7597 7.75968 9.59112 8.1868 8.09619L9 5.25L9.8132 8.09619C10.2403 9.59113 11.4089 10.7597 12.9038 11.1868L15.75 12L12.9038 12.8132C11.4089 13.2403 10.2403 14.4089 9.8132 15.9038Z" stroke="#A95726" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M18.2589 8.71454L18 9.75L17.7411 8.71454C17.4388 7.50533 16.4947 6.56117 15.2855 6.25887L14.25 6L15.2855 5.74113C16.4947 5.43883 17.4388 4.49467 17.7411 3.28546L18 2.25L18.2589 3.28546C18.5612 4.49467 19.5053 5.43883 20.7145 5.74113L21.75 6L20.7145 6.25887C19.5053 6.56117 18.5612 7.50533 18.2589 8.71454Z" stroke="#A95726" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16.8942 20.5673L16.5 21.75L16.1058 20.5673C15.8818 19.8954 15.3546 19.3682 14.6827 19.1442L13.5 18.75L14.6827 18.3558C15.3546 18.1318 15.8818 17.6046 16.1058 16.9327L16.5 15.75L16.8942 16.9327C17.1182 17.6046 17.6454 18.1318 18.3173 18.3558L19.5 18.75L18.3173 19.1442C17.6454 19.3682 17.1182 19.8954 16.8942 20.5673Z" stroke="#A95726" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <p>Owner-managed brief</p>
+        </div>
+      </header>
+      <div>
+        <div class="pricing-details-wrapper">
+          <div class="asking">
+            <div>
+              <h3>Asking</h3>
+              <p>Residential (697 sqm)</p>
+            </div>
+            <p class="amount">$75k/N100m</p>
+          </div>
+          <div class="list-buttons">
+            <ul>
+              <li>Full 3D Inside & Outside Visualization </li>
+              <li>Architectural & MEP drawings</li>
+              <li>Building development progress</li>
+              <li>Site location on Google maps</li>
+            </ul>
+            <section class="for-btns">
+              <button class="btn-secondary">Get Access</button>
+              <button class="btn-primary">Copy Phone/Whatsapp number</button>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  
+    <section class="area five">
+
+      <!-- SECTION HEADER -->
+      <header class="top">
+    
+        <div>
+          <p>Pricing</p>
+          <h2>Simple & transparent</h2>
+        </div>
+    
+        <div>
+    
+          <svg xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none">
+    
+            <path d="M9.8132 15.9038L9 18.75L8.1868 15.9038C7.75968 14.4089 6.59112 13.2403 5.09619 12.8132L2.25 12L5.09619 11.1868C6.59113 10.7597 7.75968 9.59112 8.1868 8.09619L9 5.25L9.8132 8.09619C10.2403 9.59113 11.4089 10.7597 12.9038 11.1868L15.75 12L12.9038 12.8132C11.4089 13.2403 10.2403 14.4089 9.8132 15.9038Z"
+              stroke="#A95726"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round" />
+    
+            <path d="M18.2589 8.71454L18 9.75L17.7411 8.71454C17.4388 7.50533 16.4947 6.56117 15.2855 6.25887L14.25 6L15.2855 5.74113C16.4947 5.43883 17.4388 4.49467 17.7411 3.28546L18 2.25L18.2589 3.28546C18.5612 4.49467 19.5053 5.43883 20.7145 5.74113L21.75 6L20.7145 6.25887C19.5053 6.56117 18.5612 7.50533 18.2589 8.71454Z"
+              stroke="#A95726"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round" />
+    
+            <path d="M16.8942 20.5673L16.5 21.75L16.1058 20.5673C15.8818 19.8954 15.3546 19.3682 14.6827 19.1442L13.5 18.75L14.6827 18.3558C15.3546 18.1318 15.8818 17.6046 16.1058 16.9327L16.5 15.75L16.8942 16.9327C17.1182 17.6046 17.6454 18.1318 18.3173 18.3558L19.5 18.75L18.3173 19.1442C17.6454 19.3682 17.1182 19.8954 16.8942 20.5673Z"
+              stroke="#A95726"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+    
+          <p>Owner-managed brief</p>
+    
+        </div>
+    
+      </header>
+    
+      <!-- PRICING CARD -->
+      <div class="pricing-card">
+    
+        <!-- TOP -->
+        <div class="pricing-card__top">
+    
+          <div>
+            <h3>Asking</h3>
+            <p>Residential (697 sqm)</p>
+          </div>
+    
+          <h4>$75k/N100m</h4>
+    
+        </div>
+    
+        <!-- BOTTOM -->
+        <div class="pricing-card__bottom">
+    
+          <ul>
+    
+            <li>
+              <span>✓</span>
+              Full 3D Inside & Outside Visualization
+            </li>
+    
+            <li>
+              <span>✓</span>
+              Architectural & MEP drawings
+            </li>
+    
+            <li>
+              <span>✓</span>
+              Building development progress
+            </li>
+    
+            <li>
+              <span>✓</span>
+              Site location on Google maps
+            </li>
+    
+          </ul>
+    
+          <div class="pricing-buttons">
+    
+            <button class="btn-access">
+              Get Access
+            </button>
+    
+            <button class="btn-copy">
+              Copy Phone/Whatsapp number
+            </button>
+    
+          </div>
+    
+        </div>
+    
+      </div>
+    
+    </section>
+  
+  
   </div>
   
 

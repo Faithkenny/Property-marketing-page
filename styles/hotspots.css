@@ -137,11 +137,39 @@
   animation: modalIn 300ms ease;
 }
 
-.hotspot-modal__image {
+/* .hotspot-modal__image {
   width: 100%;
   height: 320px;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
+}
+
+.hotspot-modal__image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: none;
+  }
+
+  .hotspot-modal__video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    display: none;
+    background: white;
+  } */
+
+  .hotspot-modal__image,
+.hotspot-modal__video {
+  width: 100%;
+
+  max-height: 75vh;
+
+  object-fit: contain;
+
+  display: none;
+
+  background: black;
 }
 
 .hotspot-modal__content {
@@ -149,13 +177,17 @@
 }
 
 .hotspot-modal__title {
-  font-size: 3.2rem;
-  margin-bottom: 1.2rem;
+  font-size: 2.8rem;
+  margin-bottom: 0.4rem;
+  font-family: Inter;
+  color: var(--main-color-dark)
 }
 
 .hotspot-modal__description {
   font-size: 1.6rem;
   line-height: 1.6;
+  font-family: Inter;
+  color: var(--main-color-dark)
 }
 
 .hotspot-modal__close {
@@ -180,6 +212,11 @@
 
   z-index: 5;
 }
+
+
+
+
+
 
 /* =========================
    ANIMATIONS

@@ -11,6 +11,9 @@ const modalDescription =
 const modalImage =
   document.querySelector('.hotspot-modal__image');
 
+const modalVideo =
+  document.querySelector('.hotspot-modal__video');
+
 const closeButton =
   document.querySelector('.hotspot-modal__close');
 
@@ -29,15 +32,53 @@ hotspots.forEach(hotspot => {
     const description =
       hotspot.dataset.description;
 
-    const image =
+      const media =
       hotspot.dataset.image;
+    
+    const extension =
+      media.split('.').pop().toLowerCase();
+    
+    
+    // RESET
+    modalImage.style.display = 'none';
+    
+    modalVideo.style.display = 'none';
+    
+    modalVideo.pause();
+    
+    
+    // VIDEO
+    if (
+      extension === 'mp4' ||
+      extension === 'webm' ||
+      extension === 'mov'
+    ) {
+    
+      modalVideo.src = media;
+    
+      modalVideo.style.display = 'block';
+    
+      modalVideo.load();
+    
+    }
+    
+    
+    // IMAGE
+    else {
+    
+      modalImage.src = media;
+    
+      modalImage.alt = title;
+    
+      modalImage.style.display = 'block';
+    
+    }
 
     modalTitle.textContent = title;
 
     modalDescription.textContent =
       description;
 
-    modalImage.src = image;
 
     modal.classList.add('active');
 
@@ -50,10 +91,15 @@ hotspots.forEach(hotspot => {
 // CLOSE MODAL
 function closeModal() {
 
-  modal.classList.remove('active');
-
-  document.body.style.overflow = '';
-}
+    modal.classList.remove('active');
+  
+    modalVideo.pause();
+  
+    modalVideo.currentTime = 0;
+  
+    document.body.style.overflow = '';
+  
+  }
 
 closeButton.addEventListener(
   'click',
