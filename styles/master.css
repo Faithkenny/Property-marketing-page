@@ -234,9 +234,6 @@ section.one {
   font-weight: 600;
   line-height: 1.8rem;
   letter-spacing: -0.015rem;
-}
-
-section.one a {
   text-decoration: none;
 }
 
@@ -255,6 +252,7 @@ section.one a {
   font-weight: 600;
   line-height: 1.8rem;
   letter-spacing: -0.015rem;
+  text-decoration: none;
 }
 
 /* ========================= SECTION AREAS ========================= */
@@ -757,13 +755,8 @@ section.five {
 
 .btn-access,
 .btn-copy {
-  border: none;
-  border-radius: 8px;
   padding: 2.2rem;
-  font-family: Inter;
-  font-size: 2rem;
-  font-weight: 600;
-  cursor: pointer;
+
 }
 
 .btn-access {
@@ -775,4 +768,35 @@ section.five {
 .btn-copy {
   background: var(--blue-500);
   color: var(--main-color-dark);
+}
+
+
+
+/* Clipboard copy styles */
+
+.btns {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+.btns button {
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: var(--surface-cta);
+  padding: 0.5rem 1.0rem;
+  display: flex;
+  width: 9rem;
+  justify-content: center;
+  border-radius: 0.4rem;
+  color: var(--text-nav-cta);
+}
+.btns button {
+transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.btns button.is-changing {
+opacity: 0;
+transform: scale(0.98);
 }
