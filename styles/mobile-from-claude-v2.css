@@ -169,21 +169,37 @@
   }
 
   header.top h2 {
-    font-family: Inter Display;
-    font-size: 2.8rem;
+    font-family: InterDisplay;
+    font-size: 2.2rem;
     font-weight: 600;
-    line-height: 3.2rem;
+    line-height: 2.4rem;
     letter-spacing: -0.03rem;
     width: 80%;
   }
 
   header.top div:first-of-type p:first-of-type {
     opacity: 0.75;
+    font-size: 1rem;
+  }
+
+  .products {
+    padding: 1rem 0;
+  }
+
+  .product-card {
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  .product-image {
+    width: 100%;
   }
 
   .product-card img {
-    width: 120%;
+    width: 100%;
+    display: block;
   }
+
 
   .hotspot {
     width: 1.8rem;
@@ -310,7 +326,7 @@
 
   /* ========================= SECTION FIVE ========================= */
 
-  section.five {
+  /* section.five {
     padding: 2rem;
     gap: 3rem;
   }
@@ -322,7 +338,7 @@
 
   section.five .top div:last-child p {
     font-size: 1.6rem;
-  }
+  } */
 
   .pricing-card__top,
   .pricing-card__bottom {
