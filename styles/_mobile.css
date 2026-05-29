@@ -26,7 +26,11 @@
   section.one {
     background-image: url(../images/background-for-mobile.jpg);
     background-size: cover;
-    height: 100vh;
+    /* height: 100vh; */
+
+    min-height: 100svh;
+    height: auto;
+
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -57,8 +61,9 @@
     font-weight: 700;
     line-height: normal;
     letter-spacing: -0.02rem;
-    width: 160px;
+    /* width: 160px; */
     margin: 0;
+    border: 1px solid red;
   }
 
   .title-features-price ul {
@@ -272,6 +277,7 @@
   .btn-copy {
     font-size: 1.6rem;
     padding: 1.8rem;
+    text-decoration: none;
   }
 
 }
