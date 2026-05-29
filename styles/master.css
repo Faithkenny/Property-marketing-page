@@ -42,6 +42,7 @@
 
 body {
   background-color: var(--surface-desktop-background);
+  font-family: Inter;
 }
 
 .page-wrapper {
