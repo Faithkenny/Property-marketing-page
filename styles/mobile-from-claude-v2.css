@@ -163,6 +163,7 @@
   header.top div {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
     width: 100%;
   }
@@ -173,11 +174,15 @@
     font-weight: 600;
     line-height: 3.2rem;
     letter-spacing: -0.03rem;
-    width: 100%;
+    width: 80%;
   }
 
   header.top div:first-of-type p:first-of-type {
     opacity: 0.75;
+  }
+
+  .product-card img {
+    width: 120%;
   }
 
   .hotspot {
